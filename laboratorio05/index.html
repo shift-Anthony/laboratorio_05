@@ -7,20 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header id="head">
         <h1>                <!--Encabezado y la barra de navegacion-->
             <img src="images/HTML5_logo_and_wordmark.svg.png" alt="">La computacion en el año 2025 
         </h1>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Resumen</a></li>    <!--La barra de navegacion-->
+                <li><a href="#article1">Primer Articulo</a></li>
+                <li><a href="#article2">Segundo Articulo</a></li>    <!--La barra de navegacion-->
+                <li><a href="#article3">Tercer articulo</a></li>    
+                <li><a href="#Relacionados">Relacionados</a></li>
                 <li><a href="#footer">Pie de pagina</a></li>
+                <li><a href="noticias.html">Mas noticias Locales e Internacionales sobre la computacion</a></li><!--Permite acceder a noticias.html-->
             </ul>
         </nav>
     </header>
     <main>
-        <article>
+        <hr>
+        <article id="article1">
             <h2>Introduccion a la programacion Web </h2>
             <p>La Introduccion a la programacion web es fundamental para sentar las bases en el desarrollo de aplicaciones Web</p>
             <figure>
@@ -28,7 +32,7 @@
                 <figcaption>Bases de la programacion Web</figcaption>
             </figure>   
         </article>                                              <!--Articulos con imagenes -->
-        <article>
+        <article id="article2">
             <h2>Introduccion a la programacion Orientada a Objetos </h2>
             <p>En este curso se ven las bases para la programacion orientada a objetos <br>Polimorfismo,Herencia,Atributos,Metodos    </p>
             <figure>
@@ -36,7 +40,7 @@
                 <figcaption>Lenguaje de programacion mas utilizado</figcaption>
             </figure>
         </article>
-        <article>
+        <article id="article3">
             <h2>Introduccion a la bases de datos </h2>
             <p>Las bases de datos existen en todas las empresas, un ingeniero de sistemas debe conocer <br>como se conectan desde el servidor hasta el cliente</p>
             <figure>
@@ -44,7 +48,8 @@
                 <figcaption>Bases de datos mas conocidas</figcaption>
             </figure>
         </article>
-        <aside>
+    <hr>
+        <aside id="Relacionados">       <!--Articulos Relacionados -->
             <h3>Articulos Relacionados</h3>
             <ul>
                 <li><a href="https://www.cursosgis.com/como-integramos-los-lenguajes-html-css-y-javascript/">Introduccion WEb</a></li>
@@ -54,8 +59,10 @@
         </aside>
     </main>
     <footer id="footer">
-        <p>2025 Laboratorio de Desarrollo WEb</p>
-        <address>Contacto: acondorichoc@unsa.edu.pe</address>       <!--footer del sitio web -->
+        <p>© 2025 Laboratorio de Desarrollo WEb</p>
+        <address>Contacto: acondorichoc@unsa.edu.pe</address> 
+        <a href="#head">Regresar al inicio</a>  <hr>       <!--footer del sitio web -->
     </footer>
+    
 </body>
 </html>
