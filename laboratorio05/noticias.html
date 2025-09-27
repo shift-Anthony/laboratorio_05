@@ -7,72 +7,93 @@
     <title>Document</title>
 </head>
 <body>
-    <header>Computacion e Informatica
-    <nav>
+    <header id="head"><h1>Computacion e Informatica</h1>
+    <nav >
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Resumen</a></li>    <!--La barra de navegacion-->
-            <li><a href="#">Pie de pagina</a></li>
+            <li><a href="#noticia_local">Noticias Locales</a></li>
+            <li><a href="#noti_interna">Noticias Internacionales</a></li>    <!--La barra de navegacion-->
+            <li><a href="#Relacionados">Articulos Relacionados</a></li>
+            <li><a href="#footer">Pie de pagina</a></li>
         </ul>
     </nav>
     </header>
     <main>
-        <section>
+        <section id="noticia_local"><!--Primera seccion de noticias-->
+            <hr>
             <h2>Noticias Locales</h2>
             <article>
-                <h3>Introduccion a la programacion Web </h3>
-                <p>La Introduccion a la programacion web es fundamental para sentar las bases en el desarrollo de aplicaciones Web</p>
+                <h3>Un data center para la IA</h3><!--Primera articulo local-->
+                <p>Calderón explicó que, mientras un gabinete típico en Perú consume entre 2 y 3 kilovatios (kW), <br>
+                    los nuevos modelos de IA pueden demandar entre 20 y 30 kW por gabinete, e incluso superar los 40 kW, <br>
+                    límite a partir del cual 
+                    el enfriamiento por aire ya no es viable y se requiere de refrigeración líquida.</p>
                 <figure>
-                    <img src="images/lenguajes_1.png" alt="">
-                    <figcaption>Bases de la programacion Web</figcaption>
-                </figure>   
-            </article>
+                    <img src="images/noticiaslocal1.png" alt="">
+                    <figcaption>Data Center</figcaption>
+                </figure>  
+                <time datetime="2025-09-26">26 de septiembre de 2025</time> 
+            </article>                                                                  
             <article>
-                <h3>Introduccion a la programacion Orientada a Objetos </h3>
-                <p>En este curso se ven las bases para la programacion orientada a objetos <br>Polimorfismo,Herencia,Atributos,Metodos    </p>
+                <h3>Microsoft amplía la elección de modelos</h3> <!--Segundo articulo local-->
+                <p>Los modelos Claude Sonnet 4 y Claude Opus 4.1 ahora están disponibles como opciones de modelo <br>
+                     en Copilot Studio, lo que le permite crear y personalizar fácilmente agentes de nivel empresarial. <br>
+                      "Con este lanzamiento, puede crear, orquestar y administrar agentes impulsados por modelos antrópicos <br>
+                      para un razonamiento profundo, automatización del flujo de trabajo y tareas agenciales flexibles. <br>
+                      Y con los sistemas multiagente y las herramientas de solicitud de Copilot Studio, incluso puede <br>
+                      combinar qué modelos se usan para tareas especializadas de Anthropic, <br>
+                    OpenAI o cualquiera de los modelos del catálogo de modelos de Azure”, aseguró el ejecutivo. </p>
                 <figure>
-                    <img src="images/java.svg" alt="">
-                    <figcaption>Lenguaje de programacion mas utilizado</figcaption>
+                    <img src="images/noticialocal2.png" alt="">
+                    <figcaption>Copilot y Claude Sonnet 4</figcaption>
                 </figure>
+                <time datetime="2025-09-26">26 de septiembre de 2025</time>
             </article>
-            <article>
-                <h3>Introduccion a la bases de datos </h3>
-                <p>Las bases de datos existen en todas las empresas, un ingeniero de sistemas debe conocer <br>como se conectan desde el servidor hasta el cliente</p>
-                <figure>
-                    <img src="images/images.jpeg">
-                    <figcaption>Bases de datos mas conocidas</figcaption>
-                </figure>
-            </article> 
         </section>
-        <section>
+        <hr>
+        <section id="noti_interna">   <!--Segunda seccion de noticias-->
             <h2>Noticias Internacionales</h2>
             <article>
                 <article>
-                    <h3>Introduccion a la programacion Web </h3>
-                    <p>La Introduccion a la programacion web es fundamental para sentar las bases en el desarrollo de aplicaciones Web</p>
+                    <h3>Lenovo presenta nuevas soluciones </h3><!--Primer articulo internacional-->
+                    <p>Lenovo anunció nuevas soluciones de infraestructura de TI diseñadas para ayudar a las pequeñas y <br>
+                        medianas empresas (PYMES) a implementar, escalar y aprovechar fácilmente la TI moderna en la era de la IA. <br>
+                         Según lo señalado en el comunicado de prensa, las soluciones están diseñadas para acelerar el crecimiento y <br>
+                         la innovación desde el primer día con paquetes de servidores, software y opciones de precios basadas en el <br>
+                         consumo previamente probados y validados que ayudan a las empresas en crecimiento a avanzar más rápido desde <br>
+                         la decisión hasta la implementación.</p>
                     <figure>
-                        <img src="images/lenguajes_1.png" alt="">
-                        <figcaption>Bases de la programacion Web</figcaption>
-                    </figure>   
-                </article>
+                        <img src="images/noticiainternac1.png" alt="">
+                        <figcaption>Ayudar a las pymes a evolucionar</figcaption>
+                    </figure> 
+                    <time datetime="2025-09-26">26 de septiembre de 2025</time>  
+                </article>                                                           
                 <article>
-                    <h3>Introduccion a la programacion Orientada a Objetos </h3>
-                    <p>En este curso se ven las bases para la programacion orientada a objetos <br>Polimorfismo,Herencia,Atributos,Metodos    </p>
+                    <h3>AMD y Cohere amplían su colaboración global en IA </h3> <!--Segundo articulo internacional-->
+                    <p>AMD anunció que está expandiendo su colaboración global en múltiples frentes con Cohere, la principal compañía de IA empresarial <br>
+                        con enfoque en seguridad.Según lo señalado en el comunicado de prensa, los clientes de Cohere tendrán acceso a infraestructura <br>
+                        impulsada por GPU AMD Instinct para toda la gama de soluciones de IA de Cohere, incluyendo Command A, Command A Vision, Command A Translate y North.</p>
                     <figure>
-                        <img src="images/java.svg" alt="">
-                        <figcaption>Lenguaje de programacion mas utilizado</figcaption>
-                    </figure>
-                </article>
-                <article>
-                    <h3>Introduccion a la bases de datos </h3>
-                    <p>Las bases de datos existen en todas las empresas, un ingeniero de sistemas debe conocer <br>como se conectan desde el servidor hasta el cliente</p>
-                    <figure>
-                        <img src="images/images.jpeg">
+                        <img src="images/noticinter2.png">
                         <figcaption>Bases de datos mas conocidas</figcaption>
                     </figure>
+                    <time datetime="2025-09-26">26 de septiembre de 2025</time>
                 </article> 
             </article>
+            <hr>
         </section>
+        <aside id="Relacionados">
+            <h3>Articulos Relacionados</h3>  <!--Enlaces Relacionados-->
+            <ul>
+                <li><a href="https://www.cursosgis.com/como-integramos-los-lenguajes-html-css-y-javascript/">Introduccion WEb</a></li>
+                <li><a href="https://www.bigdata.uma.es/introduccion-a-la-programacion-orientada-a-objetos-con-java-base-solida-para-big-data-e-inteligencia-artificial/">Programacion orientada a objetos</a></li>
+                <li><a href="https://pronetic.geeknetic.es/Guia/3196/Bases-de-datos-NoSQL-Que-son-Cuando-usarlas-y-Por-que-no-todas-las-apps-necesitan-SQL.html">Bases de datos</a></li>
+            </ul>
+        </aside>
     </main>
+    <footer id="footer">
+        <p>©2025 Laboratorio de Desarrollo WEb</p>
+        <address>Contacto: acondorichoc@unsa.edu.pe</address> 
+        <a href="#head">Regresar al inicio</a>  <hr>    <!--footer del sitio web -->
+    </footer>
 </body>
 </html>
